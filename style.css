@@ -2,22 +2,32 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: verdana;
+}
+
 #title {
     font-weight: bold
 }
 
-#container {
+#employees {
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
-#container div {
+#employees li {
     border: solid 1px black;
-    border-radius: 15%;
     width: calc(100% / 3 - 2rem);
-    height: 50px;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
     background-color: lightskyblue;
-    justify-content: space-between;
-    margin: .5rem 1rem;
+    justify-content: center;
     text-align: center;
+    display: flex;
+}
+
+#employees li.favorite {
+    background-color: linen;
 }
